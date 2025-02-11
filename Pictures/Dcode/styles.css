@@ -1,0 +1,120 @@
+
+        /* Family Tree Base Styles */
+        .container {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .main-header {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-bottom: 2rem;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav-item {
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            border-radius: 3px;
+            transition: background 0.3s ease;
+        }
+
+        .nav-item.active {
+            background: #3498db;
+        }
+
+        /* Family Tree Structure */
+        .branch {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            margin: 2rem 0;
+        }
+
+        .member {
+            background: #ecf0f1;
+            border: 2px solid #bdc3c7;
+            padding: 1rem;
+            margin: 1rem;
+            border-radius: 4px;
+            position: relative;
+            transition: all 0.3s ease;
+            min-width: 120px;
+            text-align: center;
+        }
+
+        .member::after {
+            content: '';
+            position: absolute;
+            background: #95a5a6;
+        }
+
+        .branch[data-generation="oldest"] .member {
+            background: #e67e22;
+            border-color: #d35400;
+        }
+
+        .branch[data-generation="middle"] .member {
+            background: #3498db;
+            border-color: #2980b9;
+        }
+
+        .branch[data-generation="young"] .member {
+            background: #2ecc71;
+            border-color: #27ae60;
+        }
+
+        /* Relationship connectors */
+        .branch>.member::after {
+            height: 2px;
+            bottom: -20px;
+            left: 50%;
+            right: 50%;
+        }
+
+        .branch>.branch::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            height: 20px;
+            width: 2px;
+            background: #95a5a6;
+        }
+
+        .highlight {
+            transform: scale(1.1);
+            box-shadow: 0 0 8px rgba(241, 196, 15, 0.5);
+            border-color: #f1c40f !important;
+        }
+
+        .family-member {
+            cursor: pointer;
+            position: relative;
+        }
+
+        #add-member {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 2rem;
+            transition: background 0.3s ease;
+        }
+
+        #add-member:hover {
+            background: #2980b9;
+        }
+  

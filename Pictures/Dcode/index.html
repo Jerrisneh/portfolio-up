@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="family-tree" class="container">
+    <header class="main-header">
+      <h1 id="title">Family Reunion</h1>
+      <nav>
+        <ul class="nav-links">
+          <li class="nav-item active">Home</li>
+          <li class="nav-item">About</li>
+          <li class="nav-item">Contact</li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main class="content">
+      <div class="branch" data-generation="oldest">
+        <div class="member elder" data-name="grandpa">
+          Grandpa
+          <div class="branch" data-generation="middle">
+            <div class="member adult" data-name="dad">
+              Dad
+              <div class="branch" data-generation="young">
+                <div class="member child" data-name="you">
+                    You
+                </div>
+                <div class="member child" data-name="sister">
+                    Sister
+                </div>
+              </div>
+            </div>
+            <div class="member adult" data-name="aunt">
+              Aunt
+              <div class="branch" data-generation="young">
+                <div class="member child" data-name="cousin">
+                    Cousin
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <button id="add-member">Add New Member</button>
+  </div>
+  <script src="/index.js"></script>
+</body>
+</html>
