@@ -38,8 +38,8 @@ body{
 .tuggle2{
     display: none;
 }
-.show ul{
-    display:block;
+.show{
+    display:flex;
 }
 @media screen and (min-width:768px){
 .tuggle ul{
