@@ -10,8 +10,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-const menuToggle = document.getElementsByClassName("menu-btn");
-const navLinks = document.querySelector(".nav-link");
+const menuToggle = document.querySelector(".menu-btn");
+const navLinks = document.querySelector(".show");
 
 menuToggle.addEventListener("click", () => {
     navLinks.classList.toggle("show");
