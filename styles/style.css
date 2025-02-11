@@ -33,13 +33,13 @@ body{
 }
 
 .nav-link ul{
-    display: flex;
-}
-.tuggle2{
     display: none;
 }
 .nav-link.active{
-    display:block;
+    display:flex;
+}
+.tuggle2{
+    display: none;
 }
 @media screen and (min-width:768px){
 .tuggle ul{
