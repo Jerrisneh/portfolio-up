@@ -38,7 +38,7 @@ body{
 .tuggle2{
     display: none;
 }
-.show{
+.nav-link.active{
     display:flex;
 }
 @media screen and (min-width:768px){
