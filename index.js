@@ -10,7 +10,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-const menuToggle = document.querySelector(".tuggle1");
+const menuToggle = document.getElementsByClassName("menu-btn");
 const navLinks = document.querySelector(".nav-link");
 
 menuToggle.addEventListener("click", () => {
