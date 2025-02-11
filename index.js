@@ -11,7 +11,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 const menuToggle = document.getElementById("menu-btn");
-const navLinks = document.querySelector(".nav-link");
+const navLinks = document.querySelector(".nav-link ul");
 
 menuToggle.addEventListener("click", () => {
     navLinks.classList.toggle("active");
