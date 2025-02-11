@@ -36,10 +36,10 @@ body{
     display: none;
 }
 .tuggle2{
-    display: flex;
+    display: block;
 }
 .nav-link.active{
-    display:flex;
+    display:block;
 }
 @media screen and (min-width:768px){
 .tuggle ul{
