@@ -33,7 +33,7 @@ body{
 }
 
 .nav-link ul{
-    display: none;
+    display: flex;
 }
 .tuggle2{
     display: block;
