@@ -1,4 +1,4 @@
-
+document.addEventListener("DOMContentLoaded", function () {
     // Mobile menu toggle
     const menuBtn = document.getElementById("menu-btn");
     const navLinks = document.querySelector(".nav-link ul");
