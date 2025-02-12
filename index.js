@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
   
     menuBtn.addEventListener("click", function () {
         navLinks.classList.toggle("active");
-        console.log("i have been clicked");
     });
   
     // Smooth scrolling for navigation links
