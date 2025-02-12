@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   
     // Smooth scrolling for navigation links
-    document.querySelectorAll(".nav-link a").forEach((link) => {
+    document.querySelectorAll(".nav-link").forEach((link) => {
       link.addEventListener("click", function (e) {
         if (this.hash !== "") {
           e.preventDefault();
