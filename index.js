@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Mobile menu toggle
-    const menuBtn = document.getElementById("menu-btn");
+    const menuBtn = document.querySelector(".tuggle1 img");
     const navLinks = document.querySelector(".nav-link ul");
   
     menuBtn.addEventListener("click", function () {
