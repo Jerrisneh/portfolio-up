@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelector(".nav-link ul");
   
     menuBtn.addEventListener("click", function () {
+        console.log("i have been clicked");
       navLinks.classList.toggle("active");
     });
   
