@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+
     // Mobile menu toggle
     const menuBtn = document.querySelector(".tuggle1 img");
     const navLinks = document.querySelector(".nav-link ul");
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
         alert(`Project ${index + 1} - Add the actual project link here.`);
       });
     });
-  });
+  
 document.addEventListener("DOMContentLoaded", function () {
   // Mobile menu toggle
   const menuBtn = document.getElementById("menu-btn");
