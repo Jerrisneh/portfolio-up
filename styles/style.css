@@ -35,7 +35,7 @@ body{
 .nav-link ul{
     display: none;
 }
-.nav-link ul.active{
+.nav-ul.active{
     display:flex;
 }
 .tuggle2{
