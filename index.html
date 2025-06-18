@@ -16,21 +16,23 @@
       <div class="nav-both">
         <div class="logo">
           <img src="./Assets/logo.svg" alt="logo" />
-          <p>Portfolio</p>
+          <p>My Portfolio</p>
         </div>
 
         <div class="nav-link">
           <ul class="nav-ul">
             <li><a href="#projects">Projects</a></li>
-            <li><a href="mailto: jerrisneh@gmail.com">Contact</a></li>
+            <li><a href='mailto: jerrisneh@gmail.com', '_blank' >Contact</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
           </ul>
         </div>
       </div>
 
       <div class="tuggle">
         <div class="tuggle1">
-          <img src="./Assets/icon-hamb.svg" alt="icon-hamb" class="menu-btn"/>
+          <img src="./Assets/icon-hamb.svg" alt="icon-hamb" class="menu-btn" />
         </div>
         <div class="tuggle2">
           <ul>
@@ -54,12 +56,23 @@
       <div class="top">
         <h1>Hello, I'm Jeremiah</h1>
         <p>
-          I'm a web developer with a deep love for turning concepts into
-          captivating online experiences. My journey in the world of web
-          development has been a thrilling exploration of codes, and continuous
-          learning.
+          I'm a Software Engineer with a deep love for turning concepts into
+          captivating online experiences. My journey in the world of software
+          engineering has been a thrilling exploration of designs, codes,
+          concepts, logic, creativity and continuous growth and learning. Go
+          ahead and click the hire me button to reach me.
         </p>
-        <button>Hire me</button>
+        <button><a href="#">Hire me</a></button>
+
+        <p class="hide">
+          Experienced Software Engineer with over 2 years experience in the best
+          programming languages in today's world, and problem solving skills as
+          well as involved in product testing, management and business
+          development processes of the development of new products and
+          businesses in this AI age. You can give a feed back via sending a
+          mail, just by clicking the send mail button
+        </p>
+        <button><a href="mailto: jerrisneh@gmail.com">Send mail</a></button>
       </div>
       <div class="bott">
         <img src="./Assets/mypic.jpg" alt="mypic" />
@@ -69,14 +82,18 @@
       <div>
         <h2>About me</h2>
         <p>
-          Technology enthusiast, very passionate and detail-oriented web
-          developer dedicated to crafting seamless, user-friendly digital
-          experiences. Web developer with a deep love for turning concepts into
-          captivating online experiences. My journey in the world of web
-          development has been a thrilling exploration of code, creativity, and
-          continuous learning.
+          Technology enthusiast, very passionate and detail-oriented Software
+          Engineer dedicated to crafting seamless, user-friendly digital
+          experiences. Soft Engineer with a deep love for turning concepts into
+          captivating online experiences. My journey in the world of software
+          engineering has been a thrilling exploration of designs, codes,
+          concepts, logic, creativity and continuous growth and learning.
         </p>
-        <button>Resume</button>
+        <button
+          onclick="window.open('./Assets/Edum Jeremiah B. Resume.pdf', '_blank')"
+        >
+          Resume
+        </button>
       </div>
       <div>
         <img src="./Assets/drawing.svg" alt="drawing" />
@@ -95,7 +112,7 @@
             a design. There's no JS in this project, so you'll be able to focus
             on your HTML & CSS skills.
           </p>
-          <button class="btn">Look it up</button>
+          <button class="btn"><a href="#">Look it up</a></button>
         </div>
         <div class="cards">
           <img src="./Assets/base-apparel.png" alt="base-apparel" />
@@ -106,7 +123,7 @@
             a design. There's no JS in this project, so you'll be able to focus
             on your HTML & CSS skills.
           </p>
-          <button class="btn">Look it up</button>
+          <button class="btn"><a href="#">Look it up</a></button>
         </div>
       </div>
       <div class="card-row">
@@ -119,7 +136,7 @@
             a design. There's no JS in this project, so you'll be able to focus
             on your HTML & CSS skills.
           </p>
-          <button class="btn">Look it up</button>
+          <button class="btn"><a href="#">Look it up</a></button>
         </div>
         <div class="cards">
           <img src="./Assets/crest.png" alt="crest" />
@@ -130,13 +147,13 @@
             a design. There's no JS in this project, so you'll be able to focus
             on your HTML & CSS skills.
           </p>
-          <button class="btn">Look it up</button>
+          <button class="btn"><a href="#">Look it up</a></button>
         </div>
       </div>
       <div class="card-row">
         <div class="cards">
           <img src="./Assets/Perfume.png" alt="Perfume" />
-          <h3>Burberry mint</h3>
+          <h3>Perfume</h3>
           <hr />
           <p>
             This is a great small challenge to help get you used to building to
@@ -147,7 +164,7 @@
         </div>
         <div class="cards">
           <img src="./Assets/Get-insights.png" alt="Get-insights" />
-          <h3>Stats Preview</h3>
+          <h3>Get-insights</h3>
           <hr />
           <p>
             This is a great small challenge to help get you used to building to
@@ -158,8 +175,20 @@
         </div>
       </div>
     </section>
+    <section class="experience" id="experience">
+      <h2>My Experience</h2>
+      <p>
+        Technology enthusiast, very passionate and detail-oriented Software
+        Engineer with over 2 years of verse technological and problem solving
+        experience with JavaScript, TypeScript, React, Nodejs, ReactNative,
+        Python, Django and even building a project on AI prompt engineering now
+        and i'm dedicated to crafting seamless, user-friendly digital
+        experiences as well.
+      </p>
+      <!-- <button>Resume</button> -->
+    </section>
     <!-- skills-sections -->
-    <section class="skills">
+    <section class="skills" id="skills">
       <h2>Skills</h2>
       <div class="skills-grid">
         <ul>
@@ -167,14 +196,20 @@
           <li>HTML</li>
           <li>JavaScript</li>
           <li>CSS</li>
+          <li>React</li>
+          <li>Nodejs</li>
+          <li>Python</li>
           <li>Teamwork</li>
           <li>Communication</li>
           <li>Optimization</li>
+          <li>Result Oriented</li>
+          <li>Multi-tasking</li>
         </ul>
       </div>
     </section>
     <footer>
       <p>&copy; 2025 [ Jeremiah Edum ] . All rights reserved.</p>
     </footer>
+    <script src="/index.js"></script>
   </body>
 </html>
