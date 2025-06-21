@@ -13,11 +13,13 @@ body {
   padding: 10px;
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 999;
   width: 100%;
   background-color: #252b38;
-  height: auto;
+  /* height: 70%; */
 }
+
 .logo {
   display: flex;
   align-items: center;
@@ -35,25 +37,44 @@ body {
   display: none;
 }
 
-.icon-wrapper svg {
+/* the nav slide */
+#mobile-nav {
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+#mobile-nav.visible {
+  transform: translateX(0);
+}
+
+/* Icon toggling */
+.icon-wrapper {
+  display: block;
+}
+.menu-icon svg {
+  display: block;
+}
+.menu-icon.show-hamburger #hamburger-icon {
+  display: block;
+}
+.menu-icon.show-close #close-icon {
+  display: block;
+}
+
+/* add css */
+/* Hide both icons by default */
+#hamburger-icon,
+#close-icon {
   display: none;
 }
 
-.icon-wrapper.show-hamburger #hamburger-icon {
+/* Show hamburger initially */
+.menu-icon.show-hamburger #hamburger-icon {
   display: block;
 }
 
-.icon-wrapper.show-close #close-icon {
+/* Show close icon when nav is visible */
+.menu-icon.show-close #close-icon {
   display: block;
-}
-
-.icon-wrapper {
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-}
-
-.tuggle1 {
 }
 
 .nav-ul.active {
@@ -99,6 +120,9 @@ body {
     background-color: #0469e0;
     padding: 5px;
     border-radius: 4px;
+  }
+  .icon-wrapper {
+    display: none;
   }
   .tuggle {
     display: flex;
