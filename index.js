@@ -1,15 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
   // this toggles the menu active and inactive(open/close) when clicking the hamburger-icon
-  const menuBtn = document.querySelector(".menu-btn");
   const navUl = document.querySelector(".nav-ul");
+  const hamburger = document.querySelector(".tuggle1");
 
-  menuBtn.addEventListener("click", function () {
+  const toggle = document.getElementById("menu-toggle");
+  toggle.addEventListener("click", function () {
     navUl.classList.toggle("active");
+  });
+
+  toggle.addEventListener("click", () => {
+    toggle.classList.toggle("show-hamburger");
+    toggle.classList.toggle("show-close");
   });
 
   // Close the menu when clicking outside
   document.addEventListener("click", function (event) {
-    if (!menuBtn.contains(event.target) && !navUl.contains(event.target)) {
+    if (!toggle.contains(event.target) && !navUl.contains(event.target)) {
       navUl.classList.remove("active");
     }
   });
@@ -26,9 +32,9 @@ document.addEventListener("DOMContentLoaded", function () {
       if (targetSection) {
         window.scrollTo({
           top: targetSection.offsetTop - 50,
-          behavior: "smooth"
+          behavior: "smooth",
         });
-        navUl.classList.remove("active");
+        // navUl.classList.remove("active");
       }
     });
   });
