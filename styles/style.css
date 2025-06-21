@@ -168,6 +168,9 @@ body {
     align-items: center;
     gap: 120px;
   }
+  .icon-wrapper {
+    display: none;
+  }
   .tuggle1 {
     display: none;
   }
