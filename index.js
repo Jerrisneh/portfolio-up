@@ -134,6 +134,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const navItems = mobileNav.querySelectorAll("li");
   const navLinks = document.querySelectorAll(".nav-ul a");
 
+  // date functionality
+  const date = document.getElementById("date");
+  date.innerHTML = new Date().getFullYear();
+
   // Initial state: show hamburger
   menuToggle.classList.add("show-hamburger");
 
@@ -202,7 +206,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
-// date functionality
-const date = document.getElementById("date");
-date.innerHTML = new Date().getFullYear();
