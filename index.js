@@ -202,3 +202,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// date functionality
+const date = document.getElementById("date");
+date.innerHTML = new Date().getFullYear();
